@@ -4,7 +4,7 @@
 ## Object-Relational Mapping (ORM) 
 
 # Description
-This app uses an Express.js API with Sequelize. The HTTP routes allow the user to perform GET, POST, PUT and DELETE requests on categories, tags, and products.
+This app makes use of an Express.js API in conjunction with Sequelize. The HTTP routes let users to make GET, POST, PUT, and DELETE queries on categories, tags, and goods.
 
 # Table of Contents
 * [Description](https://github.com/dorsariahi/module-13-challenge#Description)
@@ -13,7 +13,7 @@ This app uses an Express.js API with Sequelize. The HTTP routes allow the user t
 * [Questions](https://github.com/dorsariahi/module-13-challenge#Questions)
 
 # Installation
-Run npm i to install dependencies. Run mysql -u root -p to connect to MySQL database. Input password. Run SOURCE db/schema.sql; to create schema. exit MySQL shell. Run npm run seed to seed the database, then start the server with npm start.
+To install dependencies, use npm i. To connect to the MySQL database, use mysql -u root -p. Enter your password. To construct schema, run SOURCE db/schema.sql;. MySQL shell should be exited. Execute npm Start the server with npm start after seeding the database.
 
 # Usage
 *[Video Walkthrough]()
