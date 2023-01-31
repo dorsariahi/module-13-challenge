@@ -11,17 +11,39 @@ router.get('/', (req, res) => {
       through: ProductTag
     }]
   })
+    .then(allTags => {
+      res.json(allTags)
+    }).catch(
+      err => res.json(err)
+    )
+})
 
   // be sure to include its associated Product data
-});
 
 router.get('/:id', (req, res) => {
   // find a single tag by its `id`
+  Tag.findOne({
+    where: {
+      id: req.params.id
+    },
+    include: [{
+      model: Product,
+      through: ProductTag
+    }
+    ]
+  }).then(allTags => {
+    res.json(allTags)
+  }).catch(
+    err => res.json(err)
+  )
   // be sure to include its associated Product data
 });
 
 router.post('/', (req, res) => {
   // create a new tag
+  Tag.create(req.body)
+    .then((tag) => res.json(tag))
+    .catch((err) => res.status(400).json(err))
 });
 
 router.put('/:id', (req, res) => {
