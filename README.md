@@ -16,7 +16,7 @@ This app makes use of an Express.js API in conjunction with Sequelize. The HTTP 
 To install dependencies, use npm i. To connect to the MySQL database, use mysql -u root -p. Enter your password. To construct schema, run SOURCE db/schema.sql;. MySQL shell should be exited. Execute npm Start the server with npm start after seeding the database.
 
 # Usage
-* [Video Walkthrough]()
+* [Video Walkthrough](https://drive.google.com/file/d/1ne_x3wGoJOQAOU_tIjp67Kqqr76s9MQw/view)
 
 # Questions
 If you have any questions you can contact me at my email, dorsariahiasl@gmail.com 
